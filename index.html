@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<link>
+<title>
+    Sum Calculator
+</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <div class="container">
+        <h1>Calculator </h1>
+        <input class="inputs" id="firstNum" type="text" placeholder="first number"></input>
+
+        <input class="inputs" id="secondNum" type="text" placeholder="second number"></input>
+
+        <select id="operator">
+            <option value="" disabled selected>Select an operator</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+
+        <button onclick="populateDiv()">Calculate</button>
+        <div id="finalSum"></div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
